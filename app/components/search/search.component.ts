@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { SpotifyService } from "../../serivces/spotify.service";
 import { HTTP_PROVIDERS } from "@angular/http";
 
+import { Artist } from "../../artist";
+
 @Component({
     moduleId: module.id,
     selector: 'search',
@@ -10,7 +12,7 @@ import { HTTP_PROVIDERS } from "@angular/http";
 })
 export class SearchComponent {
   searchStr:string;
-  SearchRes: Result[];
+  SearchRes: Artist[];
 
   constructor(private _SpotifyService: SpotifyService){
     // this.searchStr = 'green day';
@@ -22,10 +24,4 @@ export class SearchComponent {
         this.SearchRes = res.artists.items;
       })
   }
-}
-
-class Result {
-  id: number;
-  name: string;
-  genre: any;
 }

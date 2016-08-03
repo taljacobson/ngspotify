@@ -15,6 +15,12 @@
       <div class="col-md-12">
         <div class="search-res well">
           <h4>{{res.name}}</h4>
+          <div>
+            <strong>genre:</strong>
+            <span *ngFor="let genre of res.genres">
+              <span>{{genre}}</span>
+            </span>
+          </div>
         </div>
       </div>
     </div>
