@@ -16,11 +16,17 @@ import { Album } from "../../album";
 export class ArtistComponent {
   id: string;
   artist: Artist[];
-  album: Album[];
+  albums: Album[];
 
   constructor( private route: ActivatedRoute, private _SpotifyService:SpotifyService ){
     this.id = route.snapshot.params['id']
     console.log(this.id)
-    this.artist = this._SpotifyService.getArtist(this.id).subscribe( artist => console.log(artist))
+    this._SpotifyService.getArtist(this.id).subscribe( artist => {
+       this.artist = artist;
+     });
+     this._SpotifyService.getAlbums(this.id).subscribe( albums => {
+       this.albums = albums.items;
+       console.log(this.albums)
+     } )
   }
 }
