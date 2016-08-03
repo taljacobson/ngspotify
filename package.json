@@ -1,7 +1,7 @@
 {
-  "name": "angular2-quickstart",
-  "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "name": "ang2spotify",
+  "version": "0.1.0",
+  "description": "angular 2 web app, using spotify api, query artist",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
