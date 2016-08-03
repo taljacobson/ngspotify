@@ -13,6 +13,10 @@
   border-bottom: #eee solid 1px
 }
 
+.artist-albums{
+  display: flex;
+}
+
 .artist-thumb{
   width: 80px;
   height: auto;
@@ -20,7 +24,7 @@
   margin-right: 10px;
 }
 
-.album.well{
+.well{
   margin-bottom: 20px;
   overflow: auto;
   min-height: 400px;
