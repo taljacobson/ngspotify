@@ -6,7 +6,7 @@
 </p>
 <form action="">
   <div class="form-group">
-    <input type="test" class="form-control" placeholder="search music" (keyup)="searchMusic()" [(ngModel)]="searchStr">
+    <input type="test" class="form-control" placeholder="search music" name="searchStr" (keyup)="searchMusic()" [(ngModel)]="searchStr">
   </div>
 </form>
 <div *ngIf="SearchRes">

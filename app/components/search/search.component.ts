@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { SpotifyService } from "../../serivces/spotify.service";
-import { HTTP_PROVIDERS } from "@angular/http";
-import { Router, ROUTER_DIRECTIVES } from "@angular/router";
+import { Router } from "@angular/router";
 
-import { Artist } from "../../artist";
-import { Album } from "../../album";
+import { SpotifyService } from "../../serivces/spotify.service";
+
+import { Artist } from "../../modal/artist";
+import { Album } from "../../modal/album";
 
 @Component({
     moduleId: module.id,
     selector: 'search',
     templateUrl: 'search.component.html',
-    directives:[ ROUTER_DIRECTIVES ],
-    providers: [ HTTP_PROVIDERS, SpotifyService ]
+    providers: [ SpotifyService ]
 })
 export class SearchComponent {
   searchStr:string;

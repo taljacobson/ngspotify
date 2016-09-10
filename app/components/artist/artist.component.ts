@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router, ROUTER_DIRECTIVES} from "@angular/router";
-import { HTTP_PROVIDERS } from "@angular/http";
+import { ActivatedRoute, Router} from "@angular/router";
 
 import { SpotifyService } from "../../serivces/spotify.service";
 
-import { Artist } from "../../artist";
-import { Album } from "../../album";
+import { Artist } from "../../modal/artist";
+import { Album } from "../../modal/album";
 
 @Component({
     moduleId: module.id,
     selector: 'artist',
     templateUrl: 'artist.component.html',
-    directives:[ ROUTER_DIRECTIVES ],
-    providers: [HTTP_PROVIDERS, SpotifyService ]
+    providers: [ SpotifyService ]
 })
 export class ArtistComponent {
   id: string;

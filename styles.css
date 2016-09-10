@@ -29,6 +29,10 @@
   overflow: auto;
   min-height: 400px;
 }
+.search-res.well{
+    min-height: 20px;
+}
+
 
 .album{
   text-align: center;
