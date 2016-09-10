@@ -27,12 +27,23 @@
 .well{
   margin-bottom: 20px;
   overflow: auto;
-  min-height: 400px;
+
 }
 .search-res.well{
     min-height: 20px;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-item {
+    flex-basis: 31%;
+    margin-left: 10px;
+
+}
 
 .album{
   text-align: center;
